@@ -872,7 +872,7 @@ make root-protocol [
 			pl/buffer: make binary! pl/buf-size
 			pl/cache: make binary! pl/buf-size
 			pl/conv-list: copy*/deep conv-model
-			pl/capabilities: []
+			pl/capabilities: make block! 1
 		]
 
 		parse/all read-packet port [
